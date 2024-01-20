@@ -1,0 +1,61 @@
+{
+  "name": "esbuild-plugin-react-virtualized",
+  "description": "ESBuild plugin for fixing react-virtualized",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": "Adam Bouqdib <adam@abemedia.co.uk>",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "prepare": "simple-git-hooks",
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "lint": "eslint --cache ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abemedia/esbuild-plugin-react-virtualized.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abemedia/esbuild-plugin-react-virtualized/issues"
+  },
+  "homepage": "https://github.com/abemedia/esbuild-plugin-react-virtualized#readme",
+  "peerDependencies": {
+    "esbuild": "*"
+  },
+  "devDependencies": {
+    "@eslint-types/import": "^2.29.1",
+    "@eslint-types/typescript-eslint": "^6.18.1",
+    "@types/node": "^20.11.5",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "esbuild": "^0.19.11",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-define-config": "^2.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-node": "^11.1.0",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.2.4",
+    "simple-git-hooks": "^2.9.0",
+    "typescript": "^5.3.3",
+    "unbuild": "^2.0.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "lint-staged --concurrent false"
+  },
+  "lint-staged": {
+    "*": "prettier --write --cache --ignore-unknown",
+    "*.ts": "eslint --cache --fix"
+  }
+}
