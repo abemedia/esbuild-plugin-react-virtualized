@@ -29,14 +29,7 @@ jobs:
       - name: Generate archive
         run: yarn pack --filename package.tgz
 
-      - name: Publish with latest tag
-        if: github.event.release.prerelease == false
-        run: npm publish package.tgz --tag latest --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      - name: Publish with next tag
-        if: github.event.release.prerelease == true
-        run: npm publish package.tgz --tag next --provenance --access public
+      - name: Publish
+        run: npm publish package.tgz --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
