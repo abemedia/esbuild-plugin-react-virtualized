@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/abemedia/esbuild-plugin-react-virtualized/compare/v1.0.1...v1.0.2) (2024-01-26)
+
+
+### Bug Fixes
+
+* build ([#15](https://github.com/abemedia/esbuild-plugin-react-virtualized/issues/15)) ([964ab98](https://github.com/abemedia/esbuild-plugin-react-virtualized/commit/964ab9870fd7f0b3b7484a5bd7ea3150a343e927))
+
 ## [1.0.1](https://github.com/abemedia/esbuild-plugin-react-virtualized/compare/v1.0.0...v1.0.1) (2024-01-25)
 
 
