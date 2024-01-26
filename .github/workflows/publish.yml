@@ -26,6 +26,9 @@ jobs:
       - name: Install dependencies
         run: yarn --frozen-lockfile
 
+      - name: Build
+        run: yarn build
+
       - name: Generate archive
         run: yarn pack --filename package.tgz
 
