@@ -332,9 +332,9 @@
   integrity sha512-22yG9mnWk/mC6rQwtgzEbE/in7H7eA36v1eBVrVdYDeapylP/N0Qw0WPq83YSlQ1kM0B72az9FCZvlMfmwQ+YA==
 
 "@eslint-types/typescript-eslint@^6.18.1":
-  version "6.18.1"
-  resolved "https://registry.yarnpkg.com/@eslint-types/typescript-eslint/-/typescript-eslint-6.18.1.tgz#7ef51a52541cf5436beaf2f26913d937f52ee062"
-  integrity sha512-sROyc1rWhtvSdszkR3VAv2fioXIyKNFFRbIgoiije2FA+iNn4FEDhP2+kvbq8wPda2adcrNhSZyWSEFsef+lbg==
+  version "6.19.1"
+  resolved "https://registry.yarnpkg.com/@eslint-types/typescript-eslint/-/typescript-eslint-6.19.1.tgz#979f5b4c10666a1b43900ee692128d811addb2ce"
+  integrity sha512-X0farz1+psE6Qfx6+ISQQ/J3ZetKlUeuTIN9Zt/agx4UXrgK6daH/n9ba776JxysK6YJCRaEHng/bcQQUm+BsA==
 
 "@eslint/eslintrc@^2.1.4":
   version "2.1.4"
