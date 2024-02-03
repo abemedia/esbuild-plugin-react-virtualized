@@ -1,10 +1,7 @@
 import { readFile } from 'node:fs/promises'
-import { normalize } from 'node:path'
 import type { Plugin } from 'esbuild'
 
-const file = 'react-virtualized/dist/es/WindowScroller/utils/onScroll.js'
-
-const filter = new RegExp(normalize(file) + '$')
+const filter = /react-virtualized[/\\]dist[/\\]es[/\\]WindowScroller[/\\]utils[/\\]onScroll\.js$/
 
 const reactVirtualized: Plugin = {
   name: 'esbuild-plugin-react-virtualized',
