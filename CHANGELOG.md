@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/abemedia/esbuild-plugin-react-virtualized/compare/v1.0.3...v1.0.4) (2024-02-03)
+
+
+### Bug Fixes
+
+* filter broken on windows ([#29](https://github.com/abemedia/esbuild-plugin-react-virtualized/issues/29)) ([3bf534b](https://github.com/abemedia/esbuild-plugin-react-virtualized/commit/3bf534b6d1d4f7669f384a7b383878d4d8b11ffa))
+
 ## [1.0.3](https://github.com/abemedia/esbuild-plugin-react-virtualized/compare/v1.0.2...v1.0.3) (2024-02-02)
 
 
