@@ -446,10 +446,10 @@
   resolved "https://registry.yarnpkg.com/@eslint-types/import/-/import-2.29.1.tgz#450d3b3093cbec3d02e25c81da03441f9a3375ca"
   integrity sha512-22yG9mnWk/mC6rQwtgzEbE/in7H7eA36v1eBVrVdYDeapylP/N0Qw0WPq83YSlQ1kM0B72az9FCZvlMfmwQ+YA==
 
-"@eslint-types/typescript-eslint@^6.18.1":
-  version "6.21.0"
-  resolved "https://registry.yarnpkg.com/@eslint-types/typescript-eslint/-/typescript-eslint-6.21.0.tgz#38f2d5da961c2b98504f63f06b0f403e74b753b2"
-  integrity sha512-ao4TdMLw+zFdAJ9q6iBBxC5GSrJ14Hpv0VKaergr++jRTDaGgoYiAq84tx1FYqUJzQgzJC7dm6s52IAQP7EiHA==
+"@eslint-types/typescript-eslint@^7.0.2":
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/@eslint-types/typescript-eslint/-/typescript-eslint-7.0.2.tgz#ca5954071db5cb5cc27b9621bf5e992082d7c86f"
+  integrity sha512-2F67MVKhkJ2rSwoYvNJzJULqZwR5rNYI/eWoIrKDQ14lMzfqzbpzCBvnHrivBYWTN+Az7MVX00TzDTrjOc+YNA==
 
 "@eslint/eslintrc@^2.1.4":
   version "2.1.4"
