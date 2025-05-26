@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/abemedia/esbuild-plugin-react-virtualized/compare/v1.0.4...v1.0.5) (2025-05-26)
+
+
+### Bug Fixes
+
+* update regex for broken import in react-virtualized plugin ([#283](https://github.com/abemedia/esbuild-plugin-react-virtualized/issues/283)) ([f8ff113](https://github.com/abemedia/esbuild-plugin-react-virtualized/commit/f8ff1137cc63eaafe912f0574a74bc176d518fbf))
+
 ## [1.0.4](https://github.com/abemedia/esbuild-plugin-react-virtualized/compare/v1.0.3...v1.0.4) (2024-02-03)
 
 
