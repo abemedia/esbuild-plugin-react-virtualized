@@ -1,7 +1,7 @@
 {
   "name": "esbuild-plugin-react-virtualized",
   "description": "ESBuild plugin for fixing react-virtualized",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "author": "Adam Bouqdib <adam@abemedia.co.uk>",
   "files": [
