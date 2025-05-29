@@ -36,20 +36,20 @@
   "devDependencies": {
     "@eslint-types/import": "^2.29.1",
     "@eslint-types/typescript-eslint": "^7.0.2",
-    "@types/node": "^22.9.0",
+    "@types/node": "^22.15.24",
     "@typescript-eslint/eslint-plugin": "^7.0.1",
     "@typescript-eslint/parser": "^7.0.1",
-    "esbuild": "^0.25.0",
+    "esbuild": "^0.25.5",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-define-config": "^2.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-node": "^11.1.0",
-    "lint-staged": "^16.0.0",
+    "lint-staged": "^16.1.0",
     "prettier": "^3.2.4",
     "simple-git-hooks": "^2.9.0",
     "typescript": "^5.3.3",
-    "unbuild": "^3.0.1"
+    "unbuild": "^3.5.0"
   },
   "simple-git-hooks": {
     "pre-commit": "yarn lint-staged --concurrent false"
