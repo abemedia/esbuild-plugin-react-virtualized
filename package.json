@@ -36,7 +36,7 @@
   "devDependencies": {
     "@eslint-types/import": "^2.29.1",
     "@eslint-types/typescript-eslint": "^7.0.2",
-    "@types/node": "^22.15.24",
+    "@types/node": "^24.0.0",
     "@typescript-eslint/eslint-plugin": "^7.0.1",
     "@typescript-eslint/parser": "^7.0.1",
     "esbuild": "^0.25.5",
