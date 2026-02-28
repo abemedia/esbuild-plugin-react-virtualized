@@ -3,13 +3,19 @@ name: Release
 on:
   push:
     branches: [master]
+  workflow_dispatch:
+    inputs:
+      release-as:
+        description: 'Release version (e.g. 1.2.3)'
+        required: true
 
 jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
     steps:
-      - uses: GoogleCloudPlatform/release-please-action@v4
+      - uses: googleapis/release-please-action@v4
         with:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           release-type: node
+          release-as: ${{ inputs.release-as }}
