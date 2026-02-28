@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/abemedia/esbuild-plugin-react-virtualized/compare/v1.0.5...v1.0.6) (2026-02-28)
+
+
+### Miscellaneous Chores
+
+* migrate toolchain to pnpm, husky, biome, and tsdown ([#350](https://github.com/abemedia/esbuild-plugin-react-virtualized/issues/350)) ([ec04ebf](https://github.com/abemedia/esbuild-plugin-react-virtualized/commit/ec04ebf61dcec2e3bb543f71e4448625e7d2042a))
+
 ## [1.0.5](https://github.com/abemedia/esbuild-plugin-react-virtualized/compare/v1.0.4...v1.0.5) (2025-05-26)
 
 
