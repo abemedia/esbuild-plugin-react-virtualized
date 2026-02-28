@@ -14,25 +14,24 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
       - name: Setup Node
         uses: actions/setup-node@v6
         with:
-          node-version: '20.x'
-          registry-url: 'https://registry.npmjs.org'
+          node-version: '24.x'
+          cache: pnpm
+          registry-url: https://registry.npmjs.org
 
-      - name: Enable Corepack
-        run: corepack enable
+      - name: Upgrade npm
+        run: npm i -g npm@latest
 
       - name: Install dependencies
-        run: yarn --frozen-lockfile
+        run: pnpm install --frozen-lockfile
 
       - name: Build
-        run: yarn build
-
-      - name: Generate archive
-        run: yarn pack --filename package.tgz
+        run: pnpm build
 
       - name: Publish
-        run: npm publish package.tgz --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm publish --provenance --access public

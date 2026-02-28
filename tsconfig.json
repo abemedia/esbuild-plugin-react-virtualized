@@ -9,7 +9,7 @@
     "sourceMap": true,
     "noEmit": true,
     "noUnusedLocals": true,
-    "esModuleInterop": true,
+    "esModuleInterop": true
   },
-  "include": ["src"],
+  "include": ["src"]
 }
