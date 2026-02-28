@@ -4,23 +4,28 @@
   "version": "1.0.5",
   "license": "MIT",
   "author": "Adam Bouqdib <adam@abemedia.co.uk>",
+  "type": "module",
+  "packageManager": "pnpm@10.30.3",
   "files": [
     "dist"
   ],
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
     }
   },
   "scripts": {
-    "prepare": "simple-git-hooks",
-    "dev": "unbuild --stub",
-    "build": "unbuild",
-    "lint": "eslint --cache ./"
+    "prepare": "husky",
+    "dev": "tsdown --watch",
+    "build": "tsdown",
+    "lint": "biome check ."
   },
   "repository": {
     "type": "git",
@@ -34,28 +39,23 @@
     "esbuild": "*"
   },
   "devDependencies": {
-    "@eslint-types/import": "^2.29.1",
-    "@eslint-types/typescript-eslint": "^7.0.2",
-    "@types/node": "^24.0.0",
-    "@typescript-eslint/eslint-plugin": "^7.0.1",
-    "@typescript-eslint/parser": "^7.0.1",
-    "esbuild": "^0.27.0",
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^10.0.1",
-    "eslint-define-config": "^2.1.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-node": "^11.1.0",
-    "lint-staged": "^16.1.0",
-    "prettier": "^3.2.4",
-    "simple-git-hooks": "^2.9.0",
-    "typescript": "^5.3.3",
-    "unbuild": "^3.5.0"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "yarn lint-staged --concurrent false"
+    "@biomejs/biome": "^2.4.4",
+    "@types/node": "^24.11.0",
+    "esbuild": "^0.27.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.3.0",
+    "prettier": "^3.8.1",
+    "tsdown": "0.20.3",
+    "typescript": "^5.9.3"
   },
   "lint-staged": {
-    "*": "prettier --write --cache --ignore-unknown",
-    "*.ts": "eslint --cache --fix"
+    "*": "biome check --write --no-errors-on-unmatched --files-ignore-unknown=true",
+    "*.{md,yml}": "prettier --write"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@biomejs/biome",
+      "esbuild"
+    ]
   }
 }
