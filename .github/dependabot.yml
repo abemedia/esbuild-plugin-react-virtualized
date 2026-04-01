@@ -9,6 +9,12 @@ updates:
       - dependency-name: '@types/node'
         update-types:
           - version-update:semver-major
+    groups:
+      dev-dependencies:
+        dependency-type: development
+        update-types:
+          - minor
+          - patch
 
   - package-ecosystem: github-actions
     directory: /
