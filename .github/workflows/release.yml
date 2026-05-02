@@ -9,7 +9,7 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     steps:
-      - uses: GoogleCloudPlatform/release-please-action@v4
+      - uses: GoogleCloudPlatform/release-please-action@v5
         with:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           release-type: node
