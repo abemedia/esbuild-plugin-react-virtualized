@@ -39,13 +39,13 @@
     "esbuild": "*"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.14",
-    "@types/node": "^24.19.0",
+    "@biomejs/biome": "^2.6.4",
+    "@types/node": "^24.19.2",
     "esbuild": "^0.28.2",
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0",
-    "prettier": "^3.9.9",
-    "tsdown": "0.23.0",
+    "prettier": "^3.9.10",
+    "tsdown": "0.23.3",
     "typescript": "^7.0.2"
   },
   "lint-staged": {
