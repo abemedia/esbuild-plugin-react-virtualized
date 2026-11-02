@@ -1,0 +1,4 @@
+'*': biome check --write --no-errors-on-unmatched --files-ignore-unknown=true
+'*.ts':
+  command: tsc --noEmit
+  pass_filenames: false
