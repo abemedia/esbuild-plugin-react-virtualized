@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.7](https://github.com/abemedia/esbuild-plugin-react-virtualized/compare/v1.0.6...v1.0.7) (2026-11-02)
+
+
+### Miscellaneous Chores
+
+* modernise dev tooling ([#385](https://github.com/abemedia/esbuild-plugin-react-virtualized/issues/385)) ([ce0b28a](https://github.com/abemedia/esbuild-plugin-react-virtualized/commit/ce0b28a9c0407d284526f92bdf93b5f0cff39667))
+
 ## [1.0.6](https://github.com/abemedia/esbuild-plugin-react-virtualized/compare/v1.0.5...v1.0.6) (2026-02-28)
 
 
