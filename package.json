@@ -5,7 +5,7 @@
   "license": "MIT",
   "author": "Adam Bouqdib <adam@abemedia.co.uk>",
   "type": "module",
-  "packageManager": "pnpm@10.30.3",
+  "packageManager": "pnpm@11.25.0",
   "files": [
     "dist"
   ],
@@ -22,7 +22,7 @@
     }
   },
   "scripts": {
-    "prepare": "husky",
+    "prepare": "stagelint init",
     "dev": "tsdown --watch",
     "build": "tsdown",
     "lint": "biome check ."
@@ -39,23 +39,11 @@
     "esbuild": "*"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.14",
+    "@biomejs/biome": "^2.6.4",
+    "@stagelint/stagelint": "^0.2.2",
     "@types/node": "^24.19.0",
     "esbuild": "^0.28.2",
-    "husky": "^9.1.7",
-    "lint-staged": "^17.6.0",
-    "prettier": "^3.9.9",
     "tsdown": "0.23.0",
     "typescript": "^7.0.2"
-  },
-  "lint-staged": {
-    "*": "biome check --write --no-errors-on-unmatched --files-ignore-unknown=true",
-    "*.{md,yml}": "prettier --write"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@biomejs/biome",
-      "esbuild"
-    ]
   }
 }
